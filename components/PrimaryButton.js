@@ -10,9 +10,9 @@ import { View, Text, Pressable, StyleSheet } from "react-native";
 // }
 
 // destructuring props.children so we don't have to access props everytime we reference it
-function PrimaryButton({ children }) {
+function PrimaryButton({ children, onPress }) {
   function pressHandler() {
-    console.log("Pressed!");
+    onPress();
   }
   return (
     <View style={styles.buttonOuterContainer}>
@@ -23,7 +23,7 @@ function PrimaryButton({ children }) {
               ? [styles.pressed, styles.buttonInnerContainer] //adding an array of styles if pressed
               : styles.buttonInnerContainer //else have the normal styles applied
         }
-        onPress={pressHandler}
+        onPress={onPress}
         android_ripple={{ color: "#640233" }}
       >
         <Text style={styles.buttonText}>{children}</Text>
