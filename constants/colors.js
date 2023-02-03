@@ -6,7 +6,7 @@ const Colors = {
 
   primary500: "#00bfff",
   primary600: "#008b8b",
-  primary800: "#00008b",
+  primary800: "#4682b4",
   secondary100: "#f0e68c",
 };
 
