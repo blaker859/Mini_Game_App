@@ -11,7 +11,7 @@ import { LinearGradient } from "expo-linear-gradient";
 import StartGameScreen from "./screens/StartGameScreen";
 import GameScreen from "./screens/GameScreen";
 import GameOverScreen from "./screens/GameOverScreen";
-import Colors from "./constants/colors";
+import Colors from "./constants/Colors";
 
 export default function App() {
   //no number initially

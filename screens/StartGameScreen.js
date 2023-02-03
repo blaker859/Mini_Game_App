@@ -3,9 +3,9 @@ import { TextInput, View, StyleSheet, Alert } from "react-native";
 
 import PrimaryButton from "../components/ui/PrimaryButton";
 import Title from "../components/ui/Title";
-import Colors from "../constants/colors";
-import Card from "../components/ui/card";
-import InstructionText from "../components/ui/instructionText";
+import Colors from "../constants/Colors";
+import Card from "../components/ui/Card";
+import InstructionText from "../components/ui/InstructionText";
 
 function StartGameScreen({ onPickNumber }) {
   const [enteredNumber, setEnteredNumber] = useState(""); //managing a string because input will always return a string
