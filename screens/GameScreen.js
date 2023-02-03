@@ -3,7 +3,7 @@ import { Text, View, StyleSheet } from "react-native";
 
 import Title from "../components/ui/Title";
 import NumberContainer from "../components/game/NumberContainer";
-import { PrimaryButton } from "../components/ui/PrimaryButton";
+import PrimaryButton from "../components/ui/PrimaryButton";
 
 function generateRandomBetween(min, max, exclude) {
   const rndNum = Math.floor(Math.random() * (max - min)) + min;
@@ -51,7 +51,7 @@ function GameScreen({ userNumber }) {
           <PrimaryButton onPress={nextGuessHandler.bind(this, "lower")}>
             -
           </PrimaryButton>
-          <PrimaryButton onPress={nextGuessHandler.bind(this, "higher")}>
+          <PrimaryButton onPress={nextGuessHandler.bind(this, "greater")}>
             +
           </PrimaryButton>
         </View>
